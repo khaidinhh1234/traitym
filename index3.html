@@ -10,6 +10,25 @@
   <body>
     <div class="container">
       <h1 class="text-center">Không yêu thì cũng phải yêu ... !!!</h1>
+      <div class="text-center">
+        <a href="index2.html">
+          <button type="button" class="btn btn-danger p-5">Yes</button>
+        </a>
+        <a href="index3.html" id="no-button">
+          <button type="button" class="btn btn-info p-5">Không</button>
+        </a>
+      </div>
+      <script>
+        document
+          .getElementById("no-button")
+          .addEventListener("mouseover", function () {
+            this.style.position = "absolute";
+            this.style.top =
+              Math.random() * (window.innerHeight - this.offsetHeight) + "px";
+            this.style.left =
+              Math.random() * (window.innerWidth - this.offsetWidth) + "px";
+          });
+      </script>
     </div>
   </body>
 </html>
